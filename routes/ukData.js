@@ -14,6 +14,9 @@ router.get('/top-wealth-distro', ukDataController.getTopWealthDistro);
 // GET /uk-data/bottom-wealth-distro
 router.get('/bottom-wealth-distro', ukDataController.getBottomWealthDistro);
 
+// GET /uk-data/ldn-res-real-estate
+router.get('/ldn-res-real-estate', ukDataController.getResidentialRealEstateInvestments);
+
 // GET /uk-data/post/:postId
 // router.get('/post/:postId', ukDataController.getPost);
 

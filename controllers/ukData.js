@@ -3,6 +3,7 @@ const { validationResult } = require("express-validator");
 const TopHundred = require('../models/topHundredWealthiest');
 const TopWealthDistroModel = require('../models/topWealthDistro');
 const BottomWealthDistroModel = require('../models/bottomWealthDistro');
+const ResRealEstateInvModel = require('../models/residentialRealEstateInvestments');
 
 exports.getTopHundredSundayTimes2025 = (req, res, next) => {
   TopHundred.find()
@@ -35,6 +36,19 @@ exports.getBottomWealthDistro = (req, res, next) => {
   BottomWealthDistroModel.find()
     .then(bottomWealthDistro => {
       res.status(200).json({'message': 'Fetched successfully', 'bottomWealthDistro': bottomWealthDistro})
+    })
+    .catch(err => {
+      if (!err.statusCode){
+        err.statusCode = 500;
+      }
+      next(err);
+    });
+};
+
+exports.getResidentialRealEstateInvestments = (req, res, next) => {
+  ResRealEstateInvModel.find()
+    .then(resRealEstateInv => {
+      res.status(200).json({'message': 'Fetched successfully', 'ldnResRealEstateInv': resRealEstateInv})
     })
     .catch(err => {
       if (!err.statusCode){
