@@ -8,6 +8,12 @@ const router = express.Router();
 // GET /uk-data/100-rich-list
 router.get('/100-rich-list', ukDataController.getTopHundredSundayTimes2025);
 
+// GET /uk-data/top-wealth-distro
+router.get('/top-wealth-distro', ukDataController.getTopWealthDistro);
+
+// GET /uk-data/bottom-wealth-distro
+router.get('/bottom-wealth-distro', ukDataController.getBottomWealthDistro);
+
 // GET /uk-data/post/:postId
 // router.get('/post/:postId', ukDataController.getPost);
 

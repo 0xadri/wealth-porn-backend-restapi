@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
+// Top 100 Rich List, by Sunday Times
 const tophundredSchema = new Schema(
   {
     rank: {
