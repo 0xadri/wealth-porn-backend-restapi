@@ -4,27 +4,27 @@ const Schema = mongoose.Schema;
 // Residential Real Estate Investments in London - source: chatgpt estimates
 const residentialrealestateinvSchema = new Schema(
   {
-    "year": {
+    'year': {
       type: Number,
       required: true
     },
-    "Total Invested in GBP": {
+    'total_invested_bln_gbp': {
       type: Number,
       required: true
     },
-    "% Individual vs Corporate Buyers": {
+    'indiv_vs_corpo_buyers_percent': {
       type: Number,
       required: true
     },
-    "% Corporate Buyers vs Individual": {
+    'corpo_vs_indiv_buyers_percent': {
       type: Number,
       required: true
     },
-    "% Local vs Foreign Corporate Buyers": {
+    'local_vs_foreign_corpo_buyers_percent': {
       type: Number,
       required: true
     },
-    "% Foreign vs Local Corporate Buyers": {
+    'foreign_vs_local_corpo_buyers_percent': {
       type: Number,
       required: true
     }

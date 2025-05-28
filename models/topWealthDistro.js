@@ -4,15 +4,19 @@ const Schema = mongoose.Schema;
 // Top Wealth Distribution, by EqualityTrust and ONS
 const topwealthdistroSchema = new Schema(
   {
-    population_percentile_top: {
-      type: String,
-      required: true
-    },
-    combined_wealth_gbp: {
+    'year': {
       type: Number,
       required: true
     },
-    notes: {
+    'population_top_percent': {
+      type: String,
+      required: true
+    },
+    'combined_wealth_bln_gbp': {
+      type: Number,
+      required: true
+    },
+    'notes': {
       type: String,
       required: false
     }

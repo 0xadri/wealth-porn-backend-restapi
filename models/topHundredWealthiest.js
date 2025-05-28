@@ -4,23 +4,27 @@ const Schema = mongoose.Schema;
 // Top 100 Rich List, by Sunday Times
 const tophundredSchema = new Schema(
   {
-    rank: {
+    'year': {
       type: Number,
       required: true
     },
-    name: {
-      type: String,
-      required: true
-    },
-    net_worth_billion_gbp: {
+    'rank': {
       type: Number,
       required: true
     },
-    source: {
+    'net_worth_bln_gbp': {
+      type: Number,
+      required: true
+    },
+    'name': {
       type: String,
       required: true
     },
-    citizenship: {
+    'citizenship': {
+      type: String,
+      required: true
+    },
+    'source': {
       type: String,
       required: true
     }
@@ -28,4 +32,4 @@ const tophundredSchema = new Schema(
   {timestamps: true}
 );
 
-module.exports = mongoose.model('top100-2025-sundaytimes', tophundredSchema);
+module.exports = mongoose.model('top100-sundaytimes', tophundredSchema);

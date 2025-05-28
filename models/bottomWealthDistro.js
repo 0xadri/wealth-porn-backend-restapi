@@ -4,11 +4,15 @@ const Schema = mongoose.Schema;
 // Bottom Wealth Distribution, by EqualityTrust and ONS
 const bottomwealthdistroSchema = new Schema(
   {
-    population_percentile_top: {
+    'year': {
+      type: Number,
+      required: true
+    },
+    'population_bottom_percent': {
       type: String,
       required: true
     },
-    combined_wealth_gbp: {
+    'combined_wealth_bln_gbp': {
       type: Number,
       required: true
     },

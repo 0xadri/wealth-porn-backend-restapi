@@ -8,7 +8,7 @@ const ResRealEstateInvModel = require('../models/residentialRealEstateInvestment
 exports.getTopHundredSundayTimes2025 = (req, res, next) => {
   TopHundred.find()
     .then(topHundredRichest => {
-      res.status(200).json({message: 'Fetched successfully', topHundredRichest: topHundredRichest})
+      res.status(200).json({message: 'Fetched successfully. Yay!', topHundredRichest: topHundredRichest})
     })
     .catch(err => {
       if (!err.statusCode){
@@ -22,7 +22,7 @@ exports.getTopWealthDistro = (req, res, next) => {
   TopWealthDistroModel.find()
     .exec()
     .then(topWealthDistro => {
-      res.status(200).json({message: 'Fetched successfully', topWealthDistro: topWealthDistro})
+      res.status(200).json({message: 'Fetched successfully. Yay!', topWealthDistro: topWealthDistro})
     })
     .catch(err => {
       if (!err.statusCode){
@@ -35,7 +35,7 @@ exports.getTopWealthDistro = (req, res, next) => {
 exports.getBottomWealthDistro = (req, res, next) => {
   BottomWealthDistroModel.find()
     .then(bottomWealthDistro => {
-      res.status(200).json({'message': 'Fetched successfully', 'bottomWealthDistro': bottomWealthDistro})
+      res.status(200).json({'message': 'Fetched successfully. Yay!', 'bottomWealthDistro': bottomWealthDistro})
     })
     .catch(err => {
       if (!err.statusCode){
@@ -48,7 +48,7 @@ exports.getBottomWealthDistro = (req, res, next) => {
 exports.getResidentialRealEstateInvestments = (req, res, next) => {
   ResRealEstateInvModel.find()
     .then(resRealEstateInv => {
-      res.status(200).json({'message': 'Fetched successfully', 'ldnResRealEstateInv': resRealEstateInv})
+      res.status(200).json({'message': 'Fetched successfully. Yay!', 'ldnResRealEstateInv': resRealEstateInv})
     })
     .catch(err => {
       if (!err.statusCode){
