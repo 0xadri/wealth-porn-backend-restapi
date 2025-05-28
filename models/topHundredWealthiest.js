@@ -1,9 +1,13 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-// Top 100 Rich List, by Sunday Times
+// Top 100 Wealthiest
 const tophundredSchema = new Schema(
   {
+    'source': {
+      type: String,
+      required: true
+    },
     'year': {
       type: Number,
       required: true
@@ -23,13 +27,9 @@ const tophundredSchema = new Schema(
     'citizenship': {
       type: String,
       required: true
-    },
-    'source': {
-      type: String,
-      required: true
     }
   },
   {timestamps: true}
 );
 
-module.exports = mongoose.model('top100-sundaytimes', tophundredSchema);
+module.exports = mongoose.model('top-100-wealthiests', tophundredSchema);

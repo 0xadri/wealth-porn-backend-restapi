@@ -1,9 +1,13 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-// Top Wealth Distribution, by EqualityTrust and ONS
+// Top Wealth Distribution
 const topwealthdistroSchema = new Schema(
   {
+    'source': {
+      type: String,
+      required: true
+    },
     'year': {
       type: Number,
       required: true

@@ -1,9 +1,13 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-// Residential Real Estate Investments in London - source: chatgpt estimates
+// Residential Real Estate Investments in London
 const residentialrealestateinvSchema = new Schema(
   {
+    'source': {
+      type: String,
+      required: true
+    },
     'year': {
       type: Number,
       required: true
