@@ -15,17 +15,17 @@
 
 ### TODO
 
-- Income Inequality: Bottom Income Distribution - 1974-2024
-- Income Inequality: Top Income Distribution - 1974-2024
-- Residential Real Estate Investments in London - Bottom Wealth Distro vs Housing Ownership %
-- Residential Real Estate Investments in London - Top Wealth Distro vs Housing Ownership %
-- country total wealth - 1974-2024
-- tax rates for the wealthy - 1974-2024
-- tax rates for various incomes brackets - 1974-2024
-- tax rates for large companies - 1974-2024
-- tax rates for small and medium companies - 1974-2024
-- stocks owned by bottom wealth - 1974-2024
-- stocks owned by top wealth - 1974-2024
+- UK stocks owned by bottom wealth - 1974-2024
+- UK stocks owned by top wealth - 1974-2024
+- Income Inequality: UK Bottom Income Distribution - 1974-2024
+- Income Inequality: UK Top Income Distribution - 1974-2024
+- LDN Residential Real Estate Investments - Bottom Wealth Distro vs Housing Ownership %
+- LDN Residential Real Estate Investments - Top Wealth Distro vs Housing Ownership %
+- UK Total Wealth - 1974-2024
+- UK tax rates for the wealthy - 1974-2024
+- UK tax rates for various incomes brackets - 1974-2024
+- UK tax rates for large companies - 1974-2024
+- UK tax rates for small and medium companies - 1974-2024
 - digital assets owned by bottom wealth - 1974-2024
 - digital assets owned by top wealth - 1974-2024
 - value of houses owned - for various age brackets - 1974-2024

@@ -6,6 +6,7 @@ const UkBottomWealthDistro = require('../models/ukBottomWealthDistro');
 const LdnResidentialRealEstateInvestments = require('../models/ldnResidentialRealEstateInvestments');
 const UkGiniCoefficient = require('../models/ukGiniCoefficient');
 const LdnBottomWealthDistro = require('../models/ldnBottomWealthDistro');
+const LdnTopWealthDistro = require('../models/ldnTopWealthDistro');
 
 
 exports.getUkTopHundredWealthiests = (req, res, next) => {
@@ -76,8 +77,21 @@ exports.getUkGiniCoefficient = (req, res, next) => {
 
 exports.getLdnBottomWealthDistro = (req, res, next) => {
   LdnBottomWealthDistro.find()
-    .then(giniCoefficients => {
-      res.status(200).json({'message': 'Fetched successfully. Yay!', 'giniCoefficients': giniCoefficients})
+    .then(ldnBottomWealthDistro => {
+      res.status(200).json({'message': 'Fetched successfully. Yay!', 'ldnBottomWealthDistro': ldnBottomWealthDistro})
+    })
+    .catch(err => {
+      if (!err.statusCode){
+        err.statusCode = 500;
+      }
+      next(err);
+    });
+};
+
+exports.getLdnTopWealthDistro = (req, res, next) => {
+  LdnTopWealthDistro.find()
+    .then(ldnTopWealthDistro => {
+      res.status(200).json({'message': 'Fetched successfully. Yay!', 'ldnTopWealthDistro': ldnTopWealthDistro})
     })
     .catch(err => {
       if (!err.statusCode){

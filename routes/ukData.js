@@ -23,4 +23,7 @@ router.get('/uk-gini-coef', ukDataController.getUkGiniCoefficient);
 // GET /uk-data/ldn-bottom-wealth-distro
 router.get('/ldn-bottom-wealth-distro', ukDataController.getLdnBottomWealthDistro);
 
+// GET /uk-data/ldn-top-wealth-distro
+router.get('/ldn-top-wealth-distro', ukDataController.getLdnTopWealthDistro);
+
 module.exports = router;
