@@ -5,22 +5,22 @@ const ukDataController = require('../controllers/ukData');
 
 const router = express.Router();
 
-// GET /uk-data/100-rich-list
-router.get('/wealth-top-100', ukDataController.getTopHundredWealthiest);
+// GET /uk-data/uk-wealth-top-100
+router.get('/uk-wealth-top-100', ukDataController.getUkTopHundredWealthiests);
 
-// GET /uk-data/top-wealth-distro
-router.get('/top-wealth-distro', ukDataController.getTopWealthDistro);
+// GET /uk-data/uk-top-wealth-distro
+router.get('/uk-top-wealth-distro', ukDataController.getUkTopWealthDistro);
 
-// GET /uk-data/bottom-wealth-distro
-router.get('/bottom-wealth-distro', ukDataController.getBottomWealthDistro);
+// GET /uk-data/uk-bottom-wealth-distro
+router.get('/uk-bottom-wealth-distro', ukDataController.getUkBottomWealthDistro);
 
 // GET /uk-data/ldn-res-real-estate
-router.get('/ldn-res-real-estate', ukDataController.getResidentialRealEstateInvestments);
+router.get('/ldn-res-real-estate', ukDataController.getLdnResidentialRealEstateInvestments);
 
-// GET /uk-data/gini-coefficient
-router.get('/gini-coefficient', ukDataController.getGiniCoefficient);
+// GET /uk-data/uk-gini-coef
+router.get('/uk-gini-coef', ukDataController.getUkGiniCoefficient);
 
-// GET /uk-data/post/:postId
-// router.get('/post/:postId', ukDataController.getPost);
+// GET /uk-data/ldn-bottom-wealth-distro
+router.get('/ldn-bottom-wealth-distro', ukDataController.getLdnBottomWealthDistro);
 
 module.exports = router;

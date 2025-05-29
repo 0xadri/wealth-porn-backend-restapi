@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-// Top 100 Wealthiest
-const tophundredSchema = new Schema(
+// Wealth Inequality: UK Top 100 Wealthiest
+const uktophundredwealthiestSchema = new Schema(
   {
     'source': {
       type: String,
@@ -32,4 +32,4 @@ const tophundredSchema = new Schema(
   {timestamps: true}
 );
 
-module.exports = mongoose.model('top-100-wealthiests', tophundredSchema);
+module.exports = mongoose.model('uk_top_100_wealthiests', uktophundredwealthiestSchema);

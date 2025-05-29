@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-// Residential Real Estate Investments in London
-const residentialrealestateinvSchema = new Schema(
+// Housing Ownership Inequality: LDN Residential Real Estate Investments
+const ldnresidentialrealestateinvSchema = new Schema(
   {
     'source': {
       type: String,
@@ -36,4 +36,4 @@ const residentialrealestateinvSchema = new Schema(
   {timestamps: true}
 );
 
-module.exports = mongoose.model('ldn-residential-real-estate-investments', residentialrealestateinvSchema);
+module.exports = mongoose.model('ldn_residential_real_estate_investments', ldnresidentialrealestateinvSchema);

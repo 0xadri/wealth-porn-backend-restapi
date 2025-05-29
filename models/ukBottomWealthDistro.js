@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-// Bottom Wealth Distribution
-const bottomwealthdistroSchema = new Schema(
+// Wealth Inequality: UK Bottom Wealth Distribution
+const ukbottomwealthdistroSchema = new Schema(
   {
     'source': {
       type: String,
@@ -24,4 +24,4 @@ const bottomwealthdistroSchema = new Schema(
   {timestamps: true}
 );
 
-module.exports = mongoose.model('bottom-wealth-distros', bottomwealthdistroSchema);
+module.exports = mongoose.model('uk_bottom_wealth_distros', ukbottomwealthdistroSchema);

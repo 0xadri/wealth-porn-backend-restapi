@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-// Top Wealth Distribution
-const topwealthdistroSchema = new Schema(
+// Wealth Inequality: UK Top Wealth Distribution
+const uktopwealthdistroSchema = new Schema(
   {
     'source': {
       type: String,
@@ -28,4 +28,4 @@ const topwealthdistroSchema = new Schema(
   {timestamps: true}
 );
 
-module.exports = mongoose.model('top-wealth-distros', topwealthdistroSchema);
+module.exports = mongoose.model('uk_top_wealth_distros', uktopwealthdistroSchema);

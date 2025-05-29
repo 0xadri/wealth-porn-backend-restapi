@@ -1,13 +1,15 @@
 const { validationResult } = require("express-validator");
 
-const TopHundred = require('../models/topHundredWealthiest');
-const TopWealthDistroModel = require('../models/topWealthDistro');
-const BottomWealthDistroModel = require('../models/bottomWealthDistro');
-const ResRealEstateInvModel = require('../models/residentialRealEstateInvestments');
-const GiniCoefficientModel = require('../models/giniCoefficient');
+const UkTopHundredWealthiests = require('../models/ukTopHundredWealthiests');
+const UkTopWealthDistro = require('../models/ukTopWealthDistro');
+const UkBottomWealthDistro = require('../models/ukBottomWealthDistro');
+const LdnResidentialRealEstateInvestments = require('../models/ldnResidentialRealEstateInvestments');
+const UkGiniCoefficient = require('../models/ukGiniCoefficient');
+const LdnBottomWealthDistro = require('../models/ldnBottomWealthDistro');
 
-exports.getTopHundredWealthiest = (req, res, next) => {
-  TopHundred.find()
+
+exports.getUkTopHundredWealthiests = (req, res, next) => {
+  UkTopHundredWealthiests.find()
     .then(topHundredRichest => {
       res.status(200).json({message: 'Fetched successfully. Yay!', topHundredRichest: topHundredRichest})
     })
@@ -19,8 +21,8 @@ exports.getTopHundredWealthiest = (req, res, next) => {
     });
 };
 
-exports.getTopWealthDistro = (req, res, next) => {
-  TopWealthDistroModel.find()
+exports.getUkTopWealthDistro = (req, res, next) => {
+  UkTopWealthDistro.find()
     .exec()
     .then(topWealthDistro => {
       res.status(200).json({message: 'Fetched successfully. Yay!', topWealthDistro: topWealthDistro})
@@ -33,8 +35,8 @@ exports.getTopWealthDistro = (req, res, next) => {
     });
 };
 
-exports.getBottomWealthDistro = (req, res, next) => {
-  BottomWealthDistroModel.find()
+exports.getUkBottomWealthDistro = (req, res, next) => {
+  UkBottomWealthDistro.find()
     .then(bottomWealthDistro => {
       res.status(200).json({'message': 'Fetched successfully. Yay!', 'bottomWealthDistro': bottomWealthDistro})
     })
@@ -46,8 +48,8 @@ exports.getBottomWealthDistro = (req, res, next) => {
     });
 };
 
-exports.getResidentialRealEstateInvestments = (req, res, next) => {
-  ResRealEstateInvModel.find()
+exports.getLdnResidentialRealEstateInvestments = (req, res, next) => {
+  LdnResidentialRealEstateInvestments.find()
     .then(resRealEstateInv => {
       res.status(200).json({'message': 'Fetched successfully. Yay!', 'ldnResRealEstateInv': resRealEstateInv})
     })
@@ -59,8 +61,21 @@ exports.getResidentialRealEstateInvestments = (req, res, next) => {
     });
 };
 
-exports.getGiniCoefficient = (req, res, next) => {
-  GiniCoefficientModel.find()
+exports.getUkGiniCoefficient = (req, res, next) => {
+  UkGiniCoefficient.find()
+    .then(giniCoefficients => {
+      res.status(200).json({'message': 'Fetched successfully. Yay!', 'giniCoefficients': giniCoefficients})
+    })
+    .catch(err => {
+      if (!err.statusCode){
+        err.statusCode = 500;
+      }
+      next(err);
+    });
+};
+
+exports.getLdnBottomWealthDistro = (req, res, next) => {
+  LdnBottomWealthDistro.find()
     .then(giniCoefficients => {
       res.status(200).json({'message': 'Fetched successfully. Yay!', 'giniCoefficients': giniCoefficients})
     })

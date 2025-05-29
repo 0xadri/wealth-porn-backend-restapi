@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-// Gini Coefficient
-const giniCoefficientSchema = new Schema(
+// Inequality Indicator: UK Gini Coefficient
+const ukginicoefficientSchema = new Schema(
   {
     'source': {
       type: String,
@@ -20,4 +20,4 @@ const giniCoefficientSchema = new Schema(
   {timestamps: true}
 );
 
-module.exports = mongoose.model('gini_coefficients', giniCoefficientSchema);
+module.exports = mongoose.model('uk_gini_coefficients', ukginicoefficientSchema);
