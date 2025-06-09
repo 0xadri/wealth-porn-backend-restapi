@@ -1,6 +1,6 @@
-# Wealth Porn App: Backend REST API in `Node`, `Express` and `MongoDB`
+# WealthPorn App: Backend REST API in `Node`, `Express` and `MongoDB`
 
-Wealth Porn tries to illustrate gather interesting data about wealth inequality.
+WealthPorn tries to illustrate gather interesting data about wealth inequality.
 
 This backend gets consumed by a Frontend in React (link to repo coming soon).
 
@@ -24,4 +24,4 @@ Coming soon...
 
 Coming soon...
 
-## [Project Mgmt](./PRJMGMT.md)
+## 🎯 [Project Mgmt](./PRJ_MGMT.md) 🎯

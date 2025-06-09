@@ -20,6 +20,10 @@ const uktopwealthdistroSchema = new Schema(
       type: Number,
       required: true
     },
+    'combined_wealth_percent': {
+      type: Number,
+      required: true
+    },
     'notes': {
       type: String,
       required: false

@@ -3,11 +3,15 @@
 ### DONE
 
 - BE: MongoDB Setup
-- BE: Data in DB + Node API: first 4 collections
+- BE: Data in DB + Node API: UK Bottom Wealth Distribution - 2024
+- BE: Data in DB + Node API: UK Top Wealth Distribution - 2024
+
 - BE: Data in DB + Node API: clean up and refactor
 - BE: Data in DB + Node API: UK Gini Coefficient - 1974-2024
 - BE: Data in DB + Node API: LDN Bottom Wealth Distribution - 2024
 - BE: Data in DB + Node API: LDN Top Wealth Distribution - 2024
+- BE: Data in DB: UK Total Value Owned in Traditional Finance excl. Real Estate - 1984-2024 - category includes Equities (Stocks), Fixed-Income Securities, Cash & Cash Equivalents, Commodities, Private Equity & Venture Capital, Insurance Products, Pensions Accounts, Retirement Accounts, Savings Accounts
+- BE: Data in DB: UK New Capital Invested in Traditional Finance excl. Real Estate - 2000-2024 - category includes Equities (Stocks), Fixed-Income Securities, Cash & Cash Equivalents, Commodities, Private Equity & Venture Capital, Insurance Products, Pensions Accounts, Retirement Accounts, Savings Accounts
 
 ### PROG
 
@@ -15,27 +19,21 @@
 
 ### TODO
 
-- UK stocks owned by bottom wealth - 1974-2024
-- UK stocks owned by top wealth - 1974-2024
+- limit API calls per minute
+- number of people: over 1 billion gpb - 1974-2024
+- number of people: over 100 millions gpb - 1974-2024
+- number of people: over 10 millions gpb - 1974-2024
 - Income Inequality: UK Bottom Income Distribution - 1974-2024
 - Income Inequality: UK Top Income Distribution - 1974-2024
-- LDN Residential Real Estate Investments - Bottom Wealth Distro vs Housing Ownership %
-- LDN Residential Real Estate Investments - Top Wealth Distro vs Housing Ownership %
-- UK Total Wealth - 1974-2024
+- UK income from taxes: total - 1974-2024
+- UK income from taxes: breakdown by sources - 1974-2024
 - UK tax rates for the wealthy - 1974-2024
-- UK tax rates for various incomes brackets - 1974-2024
 - UK tax rates for large companies - 1974-2024
 - UK tax rates for small and medium companies - 1974-2024
-- digital assets owned by bottom wealth - 1974-2024
-- digital assets owned by top wealth - 1974-2024
 - value of houses owned - for various age brackets - 1974-2024
 - house ownership - for various age brackets - 1974-2024
 - number of unions - 1974-2024
 - average debt per person (break by income range?) - 1974-2024
-- number of people over 1 million - 1974-2024
-- number of people over 10 millions - 1974-2024
-- number of people over 100 millions - 1974-2024
-- number of people over 1 billion - 1974-2024
 - FE: data: try d3js
 - FE: data viz inspiration https://www.reddit.com/r/interestingasfuck/comments/1d7vbj5/wealth_inequality_in_america_visualized/
 - FE: Mobile First
