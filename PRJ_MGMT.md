@@ -19,6 +19,7 @@
 
 ### TODO
 
+- UK Wealthiest List, update data: https://www.thetimes.com/sunday-times-rich-list
 - limit API calls per minute
 - number of people: over 1 billion gpb - 1974-2024
 - number of people: over 100 millions gpb - 1974-2024
